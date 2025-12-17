@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты — HobbyMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html"><img src="c:\Users\мектеп 184\Downloads\logo.png" width="50px" height="50px" alt="Logo" class="logo-img"></a>
+            
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="menu-trigger">🏠 Home</a></li>
+                    
+                    <li class="nav__item">
+                        <a href="#" class="menu-trigger">📦 For Seller ▾</a>
+                        <ul class="submenu">
+                            <li><a href="./advantages.html">⭐ Advantages</a></li>
+                            <li><a href="./advantages.html#calc">💰 Paid Services</a></li>
+                            <li><a href="./advantages.html#faq">❓ FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./buyer.html" class="menu-trigger">🛒 For Buyer ▾</a>
+                        <ul class="submenu">
+                            <li><a href="./buyer.html">💎 Advantages</a></li>
+                            <li><a href="./buyer.html#faq">❓ FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item"><a href="contacts.html" class="menu-trigger" style="background: var(--primary);">📞 Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="action-btns">
+                <a href="./advantages.html" class="btn-main btn-publish">Publish</a>
+                <a href="#" class="btn-main btn-view">View</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 60px 20px;">
+        <div class="reveal">
+            <h1 style="font-size: 3rem; text-align: center; margin-bottom: 40px;">Свяжитесь с нами</h1>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+            
+            <div class="info reveal">
+                <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 5px solid var(--info);">
+                    <h3 style="margin-top: 0;">Наш главный офис</h3>
+                    <p style="font-size: 1.1rem; color: #555;">📍 Казахстан, г. Астана, пр. Мангилик Ел, 55</p>
+                    <p><b>Email:</b> anvaramutov@gmail.com</p>
+                    <p><b>Тел:</b> +7 (777) 091-20-74</p>
+                </div>
+
+                <div class="map-container" style="margin-top: 30px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.1); border: 1px solid #eee;">
+                    <img src="c:\Users\мектеп 184\Downloads\map.png" alt="Map of Astana" style="width: 100%; display: block; transition: 0.5s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <div style="padding: 15px; background: #f8f9fa; text-align: center; font-size: 0.9rem; color: #888;">
+                        Наведите на карту, чтобы увеличить масштаб
+                    </div>
+                </div>
+            </div>
+
+            <div class="visuals reveal">
+                <div style="margin-bottom: 25px;">
+                    <img src="c:\Users\мектеп 184\Downloads\anthony-rosset-5r5554u-mHo-unsplash.jpg" alt="City" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                </div>
+                <div>
+                    <img src="c:\Users\мектеп 184\Downloads\jose-rueda--i_tWB5UzjY-unsplash.jpg" alt="Cosplay" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+                </div>
+                
+                <div style="margin-top: 25px; background: var(--dark); color: white; padding: 25px; border-radius: 20px; text-align: center;">
+                    <h4>Работаем ежедневно</h4>
+                    <p style="opacity: 0.8;">С 09:00 до 21:00 без выходных</p>
+                    <button class="btn-main btn-view" style="width: 100%; border: none; cursor: pointer;">Написать в WhatsApp</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

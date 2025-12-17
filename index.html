@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HobbyMarket — Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html"><img src="c:\Users\мектеп 184\Downloads\logo.png" alt="Logo" style="height:50px;"></a>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="menu-trigger">🏠 Home</a></li>
+                    <li class="nav__item">
+                        <a href="#" class="menu-trigger">📦 For Seller ▾</a>
+                        <ul class="submenu">
+                            <li><a href="./advantages.html">⭐ Advantages</a></li>
+                            <li><a href="./advantages.html#calc">💰 Paid Services</a></li>
+                            <li><a href="./advantages.html#faq">❓ FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./buyer.html" class="menu-trigger">🛒 For Buyer ▾</a>
+                        <ul class="submenu">
+                            <li><a href="./buyer.html">💎 Advantages</a></li>
+                            <li><a href="./buyer.html#faq">❓ FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="contacts.html" class="menu-trigger">📞 Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="action-btns">
+                <a href="./advantages.html" class="btn-main btn-publish">Publish</a>
+                <a href="#" class="btn-main btn-view">View</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" style="background: url('omar-flores-lQT_bOWtysE-unsplash.jpg') center/cover; padding: 120px 0; color: white; text-align: center; position: relative;">
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5);"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h1 style="font-size: 4rem; margin-bottom: 10px;">Найди свою деталь</h1>
+                <p style="font-size: 1.5rem;">Крупнейший маркетплейс LEGO и коллекционных фигурок в СНГ</p>
+                <br>
+                <a href="#categories" class="btn-main btn-view" style="display:inline-block;">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <section id="categories" class="container" style="padding: 80px 20px;">
+            <h2 style="text-align: center; margin-bottom: 40px;">Популярные категории</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="category-card reveal">
+                    <img src="c:\Users\мектеп 184\Downloads\erik-mclean-ljzBByu5p3g-unsplash.jpg" alt="Minifigures">
+                    <div class="card-text"><h3>Минифигурки</h3><p>От классики до эксклюзивов Comic-Con</p></div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="c:\Users\мектеп 184\Downloads\yulia-matvienko-kgz9vsP5JCU-unsplash.jpg" alt="Superheroes">
+                    <div class="card-text"><h3>Супергерои</h3><p>Marvel, DC и лицензионные серии</p></div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="c:\Users\мектеп 184\Downloads\keji-gao-uX9Vkal6KOc-unsplash.jpg" alt="Anime">
+                    <div class="card-text"><h3>Аниме фигурки</h3><p>Редкие статуэтки из Японии</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

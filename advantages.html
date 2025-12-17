@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель Продавца — HobbyMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html"><img src="c:\Users\мектеп 184\Downloads\logo.png" width="50px" height="50px" alt="Logo" class="logo-img"></a>
+            
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="menu-trigger">🏠 Home</a></li>
+                    
+                    <li class="nav__item">
+                        <a href="#" class="menu-trigger" style="background: var(--primary);">📦 For Seller ▾</a>
+                        <ul class="submenu">
+                            <li><a href="./advantages.html">⭐ Advantages</a></li>
+                            <li><a href="./advantages.html#calc">💰 Paid Services</a></li>
+                            <li><a href="./advantages.html#faq">❓ FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./buyer.html" class="menu-trigger">🛒 For Buyer ▾</a>
+                        <ul class="submenu">
+                            <li><a href="./buyer.html">💎 Advantages</a></li>
+                            <li><a href="./buyer.html#faq">❓ FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item"><a href="contacts.html" class="menu-trigger">📞 Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="action-btns">
+                <a href="./advantages.html" class="btn-main btn-publish">Publish</a>
+                <a href="#" class="btn-main btn-view">View</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 40px 20px;">
+        <div style="display: grid; grid-template-columns: 280px 1fr; gap: 40px;">
+            
+            <aside class="reveal">
+    <div class="sidebar-menu">
+        <h4 class="sidebar-title">Управление</h4>
+        <nav class="sidebar-nav">
+            <a href="#calc" class="sidebar-btn active">
+                <span class="btn-icon">📊</span>
+                <span class="btn-text">Калькулятор услуг</span>
+            </a>
+            <a href="#" class="sidebar-btn">
+                <span class="btn-icon">🚀</span>
+                <span class="btn-text">Ускорить продажи</span>
+            </a>
+            <a href="#" class="sidebar-btn">
+                <span class="btn-icon">🎨</span>
+                <span class="btn-text">Оформление профиля</span>
+            </a>
+            <div class="sidebar-divider"></div>
+            <a href="#faq" class="sidebar-btn secondary">
+                <span class="btn-icon">❓</span>
+                <span class="btn-text">Помощь / FAQ</span>
+            </a>
+        </nav>
+    </div>
+    
+    <div class="sidebar-promo">
+        <img src="c:\Users\мектеп 184\Downloads\kelly-sikkema-Z9AU36chmQI-unsplash.jpg" alt="Promotion">
+        <div class="promo-badge">PRO</div>
+    </div>
+</aside>
+
+            <section>
+                <div class="reveal">
+                    <h1 style="font-size: 2.5rem; margin-top: 0;">Продвижение товаров</h1>
+                    <p style="color: #666; margin-bottom: 30px;">Используйте инструменты HobbyMarket, чтобы продавать в 5 раз быстрее.</p>
+                </div>
+
+                <div id="calc" class="calc-box reveal" style="background: white; padding: 40px; border-radius: 24px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.03);">
+                    <h3 style="margin-top: 0;">Калькулятор ТОП-размещения</h3>
+                    <div style="margin: 30px 0;">
+                        <label style="font-weight: 600; font-size: 1.1rem;">Срок: <span id="daysVal" style="color: var(--info);">7</span> дней</label>
+                        <input type="range" id="daysRange" min="1" max="30" value="7" style="width: 100%; margin: 20px 0; accent-color: var(--primary); cursor: pointer;">
+                        
+                        <div class="price-display" style="background: #f8f9fa; padding: 25px; border-radius: 16px; text-align: center; border: 2px dashed #e0e0e0;">
+                            <small style="text-transform: uppercase; letter-spacing: 1px; color: #888;">Итого к оплате:</small>
+                            <h2 id="totalPrice" style="font-size: 3rem; margin: 10px 0; color: var(--dark);">700 ₸</h2>
+                        </div>
+                    </div>
+                    <button class="btn-main btn-publish" style="width: 100%; border:none; cursor:pointer; font-size: 1.1rem; justify-content: center;">➕ Активировать продвижение</button>
+                </div>
+
+                <div id="faq" style="margin-top: 60px;">
+                    <h2 class="reveal">Часто задаваемые вопросы</h2>
+                    
+                    <details class="faq-item reveal" style="background: white; margin-bottom: 12px; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
+                        <summary style="padding: 20px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            Как работает "Безопасная сделка"?
+                            <span style="color: var(--info);">+</span>
+                        </summary>
+                        <div class="faq-content" style="padding: 0 20px 20px; color: #666; line-height: 1.6;">
+                            Мы удерживаем оплату покупателя на специальном счете и переводим её вам только после того, как покупатель подтвердит получение товара. Это защищает обе стороны.
+                        </div>
+                    </details>
+
+                    <details class="faq-item reveal" style="background: white; margin-bottom: 12px; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
+                        <summary style="padding: 20px; font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            Можно ли вернуть деньги за услуги?
+                            <span style="color: var(--info);">+</span>
+                        </summary>
+                        <div class="faq-content" style="padding: 0 20px 20px; color: #666; line-height: 1.6;">
+                            Да, если услуга еще не была активирована в системе, вы можете отменить её в личном кабинете, и средства вернутся на ваш внутренний баланс HobbyMarket.
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; color: #888;">
+        <p>&copy; 2025 HobbyMarket Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
